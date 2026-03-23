@@ -1,6 +1,6 @@
 # Amadeni Dev Stack — Bestandsaufnahme
 
-> Stand: 16. März 2026 · v0.1
+> Stand: 23. März 2026 · v0.2
 
 ---
 
@@ -74,9 +74,15 @@
 ## 7. Offene Baustellen
 
 ### Kurzfristig (diese/nächste Woche)
-- [ ] Auth-Enforcement CI-Script schreiben und in Repos einbauen
-- [ ] Backend-Refactoring: `api.ts` → `queries.ts` + `mutations.ts` Split (impuls-kbb als Pilot)
-- [ ] `docs/specs/` + `docs/plans/` Struktur in allen Amadeni-Repos anlegen
+- [ ] Auth-Enforcement CI-Script schreiben und in Repos einbauen *(noch offen)*
+- [ ] Backend-Refactoring: `api.ts` → `queries.ts` + `mutations.ts` Split *(impuls-kbb hat `testData/queries.ts`, aber kein vollständiger Split)*
+- [ ] `docs/specs/` + `docs/plans/` Struktur in allen Amadeni-Repos anlegen *(noch offen)*
+- [ ] AGENTS.md in fehlende Repos ausrollen: ki-at-obv, moritz-consulting, ama-hub, jos-ba, amadeni-ui, convex-e2e
+
+### Offene PRs
+- **impuls-kbb #46**: "Use convex lib over local primitive implementation" — OPEN
+- **ki-at-obv #1**: "feat(admin): Add full admin page with user management" — OPEN
+- **ki-at-obv #2**: "feat(ui): Sync components from moritz-consulting" — OPEN
 
 ### Mittelfristig
 - [ ] `@amadeni/convex-lib` v0.2: Legacy-Aliases entfernen, Action-Ownership-Checks
