@@ -1,6 +1,6 @@
 # Amadeni Dev Stack — Bestandsaufnahme
 
-> Stand: 23. März 2026 · v0.2
+> Stand: 30. März 2026 · v0.3
 
 ---
 
@@ -80,6 +80,8 @@
 - [ ] AGENTS.md in fehlende Repos ausrollen: ki-at-obv, moritz-consulting, ama-hub, jos-ba, amadeni-ui, convex-e2e
 
 ### Offene PRs
+- **agri-tools #45**: "Store contract and asset extraction results" — OPEN (Greptile: 3/5, 2 P1 Issues)
+- **impuls-kbb #52**: "Add accounting dashboard detail dialogs" — OPEN (Greptile: 5/5, safe to merge)
 - **impuls-kbb #46**: "Use convex lib over local primitive implementation" — OPEN
 - **ki-at-obv #1**: "feat(admin): Add full admin page with user management" — OPEN
 - **ki-at-obv #2**: "feat(ui): Sync components from moritz-consulting" — OPEN

@@ -4,6 +4,36 @@ Woche für Woche dokumentiert, was sich am Dev Stack verändert hat.
 
 ---
 
+## KW 14 (30. März 2026) — Zwei große PRs, aktive Feature-Arbeit
+
+**Neue PRs:**
+- **agri-tools #45** — "Store contract and asset extraction results" (+3818/-102)
+  - Neues `entityExtractions` Domain-Modul (Tabelle, Mutations, Queries)
+  - `assetPrefill` Domain für OCR-basierte Asset-Extraktion (Mistral OCR)
+  - Greptile Score: 3/5 — zwei P1 Issues offen:
+    1. Reapply-Buttons nach Stored-Extraction sind no-ops (fehlende Prefill-Daten)
+    2. `upsertExtraction` Lookup ohne `objectId`-Scope → Cross-Object-Overwrite möglich
+  - Pattern: Shared `LightweightDocumentRefValidator` eingeführt (Loans + Valuations refactored)
+- **impuls-kbb #52** — "Add accounting dashboard detail dialogs" (+1043/-51)
+  - Drill-down Detail-Layer für Accounting Dashboard
+  - Neues `getAccountingOpenItemDetails` authQuery
+  - 4 Detail-Panel-Components + Shared Dialog
+  - Greptile Score: 5/5 — safe to merge
+  - Greptile P2: Duplizierter `AccountingOpenItemType` → `shared.ts` eingeführt
+
+**Package-Versionen:** Unverändert (`convex-lib` 0.1.8, `convex-e2e` 0.1.4)
+
+**AGENTS.md-Rollout:** Weiterhin 3/9 (agri-tools, impuls-kbb, convex-lib)
+
+**Offene Baustellen (unverändert):**
+- Auth-Enforcement CI, api.ts-Split, docs-Struktur — noch offen
+- AGENTS.md-Rollout in 6 Repos ausstehend
+
+**Einschätzung:**
+Aktive Woche mit Feature-Arbeit in den Kunden-Repos. agri-tools #45 zeigt ein interessantes neues Pattern (entityExtractions als persistente OCR-Layer). impuls-kbb #52 ist sauber genug zum Mergen. Die kurzfristigen Infrastruktur-Baustellen bleiben auf der Wartebank.
+
+---
+
 ## KW 13 (23. März 2026) — Stille Woche, Bestandsaufnahme v0.2
 
 **Beobachtungen:**
