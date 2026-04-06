@@ -4,6 +4,37 @@ Woche für Woche dokumentiert, was sich am Dev Stack verändert hat.
 
 ---
 
+## KW 15 (6. April 2026) — Neues Repo: amadeni-crm, aktive Merge-Woche
+
+**Neues Repo: amadeni-crm**
+- Next.js 16 + Convex 1.34 + shadcn/ui + Zod 4 — neuester Stack!
+- Domain-Module: contacts, companies, offers, tags, statuses, timeline
+- Business-Card-Scanner mit AI-Extraktion (`convex/contacts/scan.ts`)
+- Many-to-Many: `contact_companies` Join-Table
+- ⚠️ Nutzt **nicht** `@amadeni/convex-lib` — rohe Convex query/mutation statt Auth-Wrapper
+- ⚠️ Backend-Dateien heißen `api.ts` statt queries/mutations Split
+- ⚠️ AGENTS.md fehlt (nur Next.js auto-generated Rules)
+
+**Gemergte PRs:**
+- **agri-tools #47** "Asset-prefill" — MERGED (31. März)
+- **agri-tools #48** "Asset prefill 2" — MERGED (2. April)
+- **impuls-kbb #57** "Enhance program assignment dialog workflow" — MERGED (31. März)
+- **impuls-kbb #58** "Upload resync" — MERGED (2. April)
+- **impuls-kbb #59** "Documentation reassign" — MERGED (2. April)
+
+**Geschlossene PRs:**
+- **agri-tools #45** (ersetzt durch #47/#48)
+- **impuls-kbb #55, #56** (ersetzt durch #57)
+
+**Package-Versionen:** Unverändert (`convex-lib` 0.1.8, `convex-e2e` 0.1.4)
+
+**AGENTS.md-Rollout:** 3/10 (agri-tools, impuls-kbb, convex-lib) — amadeni-crm als neues Ziel
+
+**Einschätzung:**
+Sehr aktive Woche! Amadeni-crm ist ein frisches Projekt — guter Moment, Konventionen von Anfang an richtig einzuführen. Die asset-prefill Story in agri-tools ist abgeschlossen (P1-Issues aus #45 offenbar adressiert). impuls-kbb bekommt regelmäßig PRs. ki-at-obv PRs sind jetzt seit fast 2 Monaten offen — könnte Review brauchen.
+
+---
+
 ## KW 14 (30. März 2026) — Zwei große PRs, aktive Feature-Arbeit
 
 **Neue PRs:**

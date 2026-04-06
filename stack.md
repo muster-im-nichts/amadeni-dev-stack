@@ -1,6 +1,6 @@
 # Amadeni Dev Stack — Bestandsaufnahme
 
-> Stand: 30. März 2026 · v0.3
+> Stand: 6. April 2026 · v0.4
 
 ---
 
@@ -75,16 +75,14 @@
 
 ### Kurzfristig (diese/nächste Woche)
 - [ ] Auth-Enforcement CI-Script schreiben und in Repos einbauen *(noch offen)*
-- [ ] Backend-Refactoring: `api.ts` → `queries.ts` + `mutations.ts` Split *(impuls-kbb hat `testData/queries.ts`, aber kein vollständiger Split)*
+- [ ] Backend-Refactoring: `api.ts` → `queries.ts` + `mutations.ts` Split *(amadeni-crm hat noch `api.ts` Pattern, impuls-kbb teilweise)*
 - [ ] `docs/specs/` + `docs/plans/` Struktur in allen Amadeni-Repos anlegen *(noch offen)*
-- [ ] AGENTS.md in fehlende Repos ausrollen: ki-at-obv, moritz-consulting, ama-hub, jos-ba, amadeni-ui, convex-e2e
+- [ ] AGENTS.md in fehlende Repos ausrollen: ki-at-obv, moritz-consulting, ama-hub, jos-ba, amadeni-ui, convex-e2e, **amadeni-crm** (neu!)
+- [ ] **amadeni-crm**: `@amadeni/convex-lib` integrieren (Auth-Wrapper, Permissions) — nutzt derzeit rohe Convex-Primitives
 
 ### Offene PRs
-- **agri-tools #45**: "Store contract and asset extraction results" — OPEN (Greptile: 3/5, 2 P1 Issues)
-- **impuls-kbb #52**: "Add accounting dashboard detail dialogs" — OPEN (Greptile: 5/5, safe to merge)
-- **impuls-kbb #46**: "Use convex lib over local primitive implementation" — OPEN
-- **ki-at-obv #1**: "feat(admin): Add full admin page with user management" — OPEN
-- **ki-at-obv #2**: "feat(ui): Sync components from moritz-consulting" — OPEN
+- **ki-at-obv #1**: "feat(admin): Add full admin page with user management" — OPEN (seit 9. Feb!)
+- **ki-at-obv #2**: "feat(ui): Sync components from moritz-consulting" — OPEN (seit 9. Feb!)
 
 ### Mittelfristig
 - [ ] `@amadeni/convex-lib` v0.2: Legacy-Aliases entfernen, Action-Ownership-Checks
