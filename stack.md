@@ -1,6 +1,6 @@
 # Amadeni Dev Stack — Bestandsaufnahme
 
-> Stand: 6. April 2026 · v0.4
+> Stand: 20. April 2026 · v0.5
 
 ---
 
@@ -79,10 +79,15 @@
 - [ ] `docs/specs/` + `docs/plans/` Struktur in allen Amadeni-Repos anlegen *(noch offen)*
 - [ ] AGENTS.md in fehlende Repos ausrollen: ki-at-obv, moritz-consulting, ama-hub, jos-ba, amadeni-ui, convex-e2e, **amadeni-crm** (neu!)
 - [ ] **amadeni-crm**: `@amadeni/convex-lib` integrieren (Auth-Wrapper, Permissions) — nutzt derzeit rohe Convex-Primitives
+- [ ] **impuls-kbb**: Factorial-Abhängigkeit evaluieren — native Convex Time Entries als Ersatz (PR #69)
 
 ### Offene PRs
-- **ki-at-obv #1**: "feat(admin): Add full admin page with user management" — OPEN (seit 9. Feb!)
-- **ki-at-obv #2**: "feat(ui): Sync components from moritz-consulting" — OPEN (seit 9. Feb!)
+- **agri-tools #67**: "fix: show actual VAT payments in transaction drill-down" — OPEN (seit 17. Apr)
+- **impuls-kbb #69**: "feat: Native Convex Time Entries" — OPEN (seit 17. Apr) — **strategisch wichtig** (Factorial-Ablösung)
+- **impuls-kbb #67**: "fix: improve Factorial time-tracking sync reliability (Codex)" — OPEN (seit 17. Apr)
+- **impuls-kbb #66**: "fix: improve Factorial time-tracking sync reliability" — OPEN (seit 17. Apr)
+- **ki-at-obv #1**: "feat(admin): Add full admin page with user management" — OPEN (seit 9. Feb!) ⚠️ 10 Wochen
+- **ki-at-obv #2**: "feat(ui): Sync components from moritz-consulting" — OPEN (seit 9. Feb!) ⚠️ 10 Wochen
 
 ### Mittelfristig
 - [ ] `@amadeni/convex-lib` v0.2: Legacy-Aliases entfernen, Action-Ownership-Checks

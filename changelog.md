@@ -4,6 +4,40 @@ Woche für Woche dokumentiert, was sich am Dev Stack verändert hat.
 
 ---
 
+## KW 16 (13.–20. April 2026) — Mega-Sprint: KMZ-Maps, VAT, Billing, Factorial-Ablösung
+
+**agri-tools (65+ Commits!):**
+- 🗺️ **KMZ Boundary Maps**: Vollständige Kartenintegration — KMZ-Upload mit Feature-Auswahl, Mixed-Geometry-Support, Basemap-Fehlerbehandlung, Zuordnung auf Objekten und Flurstücken
+- 📝 **Field Notes**: Neues Feature — Feldnotizen auf Objektformularen mit Status-Aggregation, Thread-Aktionen, Sync und Document-Ref-Verknüpfung
+- 💰 **VAT Settlement**: Umfangreiche Überarbeitung — Scope-Berechnungen, Validierung auf Rechnungszeilen, partielle Abrechnung, Vorzeichennormalisierung
+- 🏢 **Company Management**: Firmen-Archivierung für gemergte Datensätze, Eigentumsverhältnisse und gewichtete Konsolidierung
+- 📊 **Investments & Operations**: Asset-verknüpfter Investment-Lifecycle, Operations-Management-Module, Parcel-Sale-Workflow
+- 🔒 **Auth**: Diagnostics-Endpoint und Cookie-Flow-Fix
+- 📋 **PR #67** (VAT transaction drill-down): OPEN
+
+**impuls-kbb (35+ Commits!):**
+- ⏱️ **Native Convex Time Entries (PR #69)**: Strategisch — Zeiterfassung von Factorial nach Convex verlagern! Ersetzt externe Abhängigkeit durch eigenes Domain-Modul
+- 💶 **Billing Overhaul**: Abrechnungskatalog mit Stundensätzen, Merge-Workflow, Template-basierte Service-Erstellung, konfigurierbare Default-Stundensätze
+- 🧾 **Invoice PDF Refresh**: Neues Template, Branding-Felder, Organisation/Settings aufgetrennt
+- 🔄 **Factorial Sync**: Relinking, Operation-Tracing, sichere Refetches — parallel zur Ablösung nochmal stabilisiert
+- 📋 **PRs #66, #67, #69**: OPEN (3 aktive PRs!)
+
+**Beobachtungen:**
+- Extrem aktive Woche in beiden Haupt-Repos — Nico baut massiv Features
+- agri-tools bekommt eine richtige GIS-Komponente (KMZ-Maps!) — neues Terrain
+- impuls-kbb PR #69 ist ein architektureller Meilenstein: Factorial als externe Abhängigkeit wird optional/ersetzbar
+- ki-at-obv PRs jetzt **10 Wochen** offen — brauchen dringend Entscheidung (mergen, schließen, oder überarbeiten?)
+- amadeni-crm: Weiterhin keine Aktivität seit Erstellung
+- Package-Versionen: Unverändert (`convex-lib` 0.1.8, `convex-e2e` 0.1.4)
+- AGENTS.md-Rollout: Weiterhin 3/10
+
+**Empfehlung:**
+1. ki-at-obv PRs #1 und #2 — nach 10 Wochen sollte Nico entscheiden: Merge, Close, oder Rebase?
+2. impuls-kbb hat 3 offene PRs zum selben Themenfeld (Factorial) — Review-Priorisierung sinnvoll
+3. amadeni-crm wäre ein guter Kandidat für AGENTS.md + `@amadeni/convex-lib` Integration als nächstes
+
+---
+
 ## KW 15 (6. April 2026) — Neues Repo: amadeni-crm, aktive Merge-Woche
 
 **Neues Repo: amadeni-crm**
