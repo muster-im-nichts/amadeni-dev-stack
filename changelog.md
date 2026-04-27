@@ -4,6 +4,42 @@ Woche für Woche dokumentiert, was sich am Dev Stack verändert hat.
 
 ---
 
+## KW 17 (21.–27. April 2026) — Billing-Offensive & Factorial-Cockpit
+
+**impuls-kbb (10 gemergte PRs! #70–#79):**
+- 🔍 **Factorial Sync Overhaul**: Relink-Suche (#70, #71), Status-Cockpit (#72), Retry & Auto-Link Actions (#74) — Factorial-Integration massiv stabilisiert und sichtbarer gemacht
+- 💶 **Yearly Flat Billing** (#73): Jahrespauschalen als neues Abrechnungsmodell
+- 🧾 **Invoice Catalog Items** (#77): Abrechnungskatalog-Items direkt auf Rechnungen
+- 📎 **Proof & Attribution** (#75, #76): Nachweisdokumente an Services & Rechnungen
+- 🏷️ **Multi-Program Billing** (#78): Mehrere Programme pro Abrechnung + Korrekturentwürfe
+- ✅ **Proof Status vereinfacht** (#79): Übersichtlichere Nachweiszählung
+- ❌ **Echo-PRs #66, #67, #69 geschlossen** — Nicos Richtung: Factorial-Sync verbessern statt durch native Time Entries ersetzen
+
+**agri-tools (2 gemergte PRs #68, #69):**
+- 💰 **CashFlow Pagination** (#68): Paginierte Vorschläge + gefilterte Dokumente
+- 📊 **VAT State Drilldown** (#69): Detaillierte Steuer-Status-Panels
+- 📋 **PR #67** (VAT transaction drill-down): Weiterhin OPEN (10 Tage)
+
+**amadeni-crm:** Keine Aktivität.
+
+**AGENTS.md-Rollout:** 4/10 — amadeni-crm hat jetzt AGENTS.md! (neu seit letzter Woche)
+
+**Package-Versionen:** Unverändert (`convex-lib` 0.1.8, `convex-e2e` 0.1.4)
+
+**Beobachtungen:**
+- impuls-kbb hatte eine **Mega-Woche** mit 10 gemergten PRs — Billing-System wird richtig erwachsen
+- Nico hat entschieden: Factorial bleibt, wird aber besser gemanagt (Cockpit, Retry, Relink). Die native-Time-Entries-Richtung ist vom Tisch
+- agri-tools VAT/CashFlow-Bereich reift weiter
+- ki-at-obv PRs jetzt **11 Wochen** offen — wird langsam zum toten Code
+- AGENTS.md-Fortschritt: amadeni-crm war Neuzugang, noch 6 Repos offen
+
+**Empfehlung:**
+1. ki-at-obv PRs #1/#2: Nach 11 Wochen sollten sie geschlossen werden — Code ist vermutlich veraltet
+2. agri-tools PR #67: Noch relevant? 10 Tage ohne Review
+3. impuls-kbb Billing-Features testen lassen — viel Neues in kurzer Zeit
+
+---
+
 ## KW 16 (13.–20. April 2026) — Mega-Sprint: KMZ-Maps, VAT, Billing, Factorial-Ablösung
 
 **agri-tools (65+ Commits!):**

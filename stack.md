@@ -1,6 +1,6 @@
 # Amadeni Dev Stack — Bestandsaufnahme
 
-> Stand: 20. April 2026 · v0.5
+> Stand: 27. April 2026 · v0.6
 
 ---
 
@@ -77,17 +77,19 @@
 - [ ] Auth-Enforcement CI-Script schreiben und in Repos einbauen *(noch offen)*
 - [ ] Backend-Refactoring: `api.ts` → `queries.ts` + `mutations.ts` Split *(amadeni-crm hat noch `api.ts` Pattern, impuls-kbb teilweise)*
 - [ ] `docs/specs/` + `docs/plans/` Struktur in allen Amadeni-Repos anlegen *(noch offen)*
-- [ ] AGENTS.md in fehlende Repos ausrollen: ki-at-obv, moritz-consulting, ama-hub, jos-ba, amadeni-ui, convex-e2e, **amadeni-crm** (neu!)
+- [ ] AGENTS.md in fehlende Repos ausrollen: ki-at-obv, moritz-consulting, ama-hub, jos-ba, amadeni-ui, convex-e2e *(4/10 erledigt — amadeni-crm neu dazu!)*
 - [ ] **amadeni-crm**: `@amadeni/convex-lib` integrieren (Auth-Wrapper, Permissions) — nutzt derzeit rohe Convex-Primitives
-- [ ] **impuls-kbb**: Factorial-Abhängigkeit evaluieren — native Convex Time Entries als Ersatz (PR #69)
+- [ ] **impuls-kbb**: Factorial-Strategie klären — native Convex Time Entries PR wurde geschlossen, aber Nico baut parallel Factorial-Sync weiter aus (Cockpit, Retry, Relink)
 
 ### Offene PRs
-- **agri-tools #67**: "fix: show actual VAT payments in transaction drill-down" — OPEN (seit 17. Apr)
-- **impuls-kbb #69**: "feat: Native Convex Time Entries" — OPEN (seit 17. Apr) — **strategisch wichtig** (Factorial-Ablösung)
-- **impuls-kbb #67**: "fix: improve Factorial time-tracking sync reliability (Codex)" — OPEN (seit 17. Apr)
-- **impuls-kbb #66**: "fix: improve Factorial time-tracking sync reliability" — OPEN (seit 17. Apr)
-- **ki-at-obv #1**: "feat(admin): Add full admin page with user management" — OPEN (seit 9. Feb!) ⚠️ 10 Wochen
-- **ki-at-obv #2**: "feat(ui): Sync components from moritz-consulting" — OPEN (seit 9. Feb!) ⚠️ 10 Wochen
+- **agri-tools #67**: "fix: show actual VAT payments in transaction drill-down" — OPEN (seit 17. Apr) — 10 Tage
+- **ki-at-obv #1**: "feat(admin): Add full admin page with user management" — OPEN (seit 9. Feb!) ⚠️ 11 Wochen
+- **ki-at-obv #2**: "feat(ui): Sync components from moritz-consulting" — OPEN (seit 9. Feb!) ⚠️ 11 Wochen
+
+### Geschlossene Echo-PRs (KW 17)
+- **impuls-kbb #69**: "feat: Native Convex Time Entries" — CLOSED (Nico geht anderen Weg: Factorial-Sync verbessern statt ablösen)
+- **impuls-kbb #67**: "fix: improve Factorial time-tracking sync reliability (Codex)" — CLOSED
+- **impuls-kbb #66**: "fix: improve Factorial time-tracking sync reliability" — CLOSED
 
 ### Mittelfristig
 - [ ] `@amadeni/convex-lib` v0.2: Legacy-Aliases entfernen, Action-Ownership-Checks
