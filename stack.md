@@ -1,6 +1,6 @@
 # Amadeni Dev Stack — Bestandsaufnahme
 
-> Stand: 27. April 2026 · v0.6
+> Stand: 4. Mai 2026 · v0.7
 
 ---
 
@@ -13,6 +13,7 @@
 | **Backend** | Convex (BaaS) | ✅ Produktiv |
 | **Auth** | Convex Auth | ✅ Produktiv |
 | **Hosting** | Vercel (Frontend) + Convex Cloud (Backend) | ✅ Produktiv |
+| **Hosting (Self)** | Convex Self-Hosted (Mynd) | 🟡 Produktiv-Pilotbetrieb |
 | **Monorepo** | Nein — ein Repo pro Projekt | ✅ Bewusste Entscheidung |
 
 ## 2. Shared Packages
@@ -77,29 +78,27 @@
 - [ ] Auth-Enforcement CI-Script schreiben und in Repos einbauen *(noch offen)*
 - [ ] Backend-Refactoring: `api.ts` → `queries.ts` + `mutations.ts` Split *(amadeni-crm hat noch `api.ts` Pattern, impuls-kbb teilweise)*
 - [ ] `docs/specs/` + `docs/plans/` Struktur in allen Amadeni-Repos anlegen *(noch offen)*
-- [ ] AGENTS.md in fehlende Repos ausrollen: ki-at-obv, moritz-consulting, ama-hub, jos-ba, amadeni-ui, convex-e2e *(4/10 erledigt — amadeni-crm neu dazu!)*
-- [ ] **amadeni-crm**: `@amadeni/convex-lib` integrieren (Auth-Wrapper, Permissions) — nutzt derzeit rohe Convex-Primitives
-- [ ] **impuls-kbb**: Factorial-Strategie klären — native Convex Time Entries PR wurde geschlossen, aber Nico baut parallel Factorial-Sync weiter aus (Cockpit, Retry, Relink)
+- [ ] AGENTS.md in fehlende Repos ausrollen *(4/10 erledigt)*
+- [ ] **amadeni-crm**: `@amadeni/convex-lib` integrieren (Auth-Wrapper, Permissions)
+- [ ] **Mynd**: Patterns dokumentieren — neues Referenzprojekt für Convex Self-Hosted + Better Auth + Telegram-Bridge
 
 ### Offene PRs
-- **agri-tools #67**: "fix: show actual VAT payments in transaction drill-down" — OPEN (seit 17. Apr) — 10 Tage
-- **ki-at-obv #1**: "feat(admin): Add full admin page with user management" — OPEN (seit 9. Feb!) ⚠️ 11 Wochen
-- **ki-at-obv #2**: "feat(ui): Sync components from moritz-consulting" — OPEN (seit 9. Feb!) ⚠️ 11 Wochen
-
-### Geschlossene Echo-PRs (KW 17)
-- **impuls-kbb #69**: "feat: Native Convex Time Entries" — CLOSED (Nico geht anderen Weg: Factorial-Sync verbessern statt ablösen)
-- **impuls-kbb #67**: "fix: improve Factorial time-tracking sync reliability (Codex)" — CLOSED
-- **impuls-kbb #66**: "fix: improve Factorial time-tracking sync reliability" — CLOSED
+- **agri-tools #72**: "Add asset registry feedback, admin workflows, and schema migrations" — OPEN (seit 28. Apr) — 6 Tage
+- **impuls-kbb #80**: "Allow authorized edits on locked documentation" — OPEN (seit 28. Apr) — 6 Tage
+- **ki-at-obv #1**: "feat(admin): Add full admin page with user management" — OPEN (seit 9. Feb!) ⚠️ **12+ Wochen** — sollte geschlossen werden
+- **ki-at-obv #2**: "feat(ui): Sync components from moritz-consulting" — OPEN (seit 9. Feb!) ⚠️ **12+ Wochen** — sollte geschlossen werden
 
 ### Mittelfristig
 - [ ] `@amadeni/convex-lib` v0.2: Legacy-Aliases entfernen, Action-Ownership-Checks
 - [ ] Frontend-Test-Coverage: Testing Library Setup in impuls-kbb
 - [ ] Project-Scaffold-Template: `create-amadeni-app` Skill aktualisieren
+- [ ] Mynd-Patterns (Telegram Bot, Voice Tools, Image Upload) als wiederverwendbare Referenz extrahieren
 
 ### Langfristig / Vision
 - [ ] Vollständig autonomer Projekt-Lifecycle: Scaffold → Develop → Test → Review → Deploy
 - [ ] Selbst-optimierendes System: Agents erkennen Patterns und schlagen Conventions vor
 - [ ] Shared Component Library als eigenes Package (`@amadeni/ui`?)
+- [ ] Convex Self-Hosted als Standard-Deployment-Option neben Convex Cloud
 
 ---
 

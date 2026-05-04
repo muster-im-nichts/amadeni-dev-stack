@@ -4,6 +4,44 @@ Woche für Woche dokumentiert, was sich am Dev Stack verändert hat.
 
 ---
 
+## KW 18 (28. April – 4. Mai 2026) — Mynd-Explosion & agri-tools Contracts
+
+**mynd (20+ PRs gemergt, #17–#34!):**
+- 🤖 **Telegram Bridge** (#30): Echo ist jetzt über Telegram in Mynd erreichbar — vollständige Telegram-Bot-Integration mit Group Chat Support (#33), Typing Indicators (#32), Security-Hardening (#31), und Mention-Handling (#34)
+- 🎤 **Voice Tools** (#26, #27): TTS + Transcription direkt im Chat
+- 🖼️ **Image Upload + Vision** (#18, #19, #20): Bilder hochladen und per Anthropic Vision API analysieren
+- 🛠️ **Tool-System vereinfacht** (#17): Single Bash Tool statt Multi-Tool-Setup, mit Workdir + Safety
+- 🎨 **Dark/Light Mode** + Scroll-Fixes + Graceful Error Handling
+- 📏 **1 MiB Limit behoben** (#21, #22): Context Sections + Tool Results werden jetzt getrimmt
+- **Stack:** Next.js 16.2 + Convex 1.36 + Better Auth — neuester Stand aller Amadeni-Projekte
+
+**agri-tools (3 gemergte PRs #70–#73):**
+- 📊 **Formula Diagnostics** (#70): Integritätsprüfungen für Formeln in der Admin-Übersicht
+- 📝 **Asset Registry Feedback** (#71): Feedback-Felder und Seed-Daten für die Anlageregistrierung
+- 💰 **Composite Contract Pricing** (#73): Zusammengesetzte Vertragspreismodelle
+- 📋 **PR #72** (Asset Registry Feedback + Admin Workflows): OPEN (6 Tage)
+
+**impuls-kbb:**
+- Ruhige Woche nach dem KW 17-Sprint. Keine neuen Merges.
+- 📋 **PR #80** (Locked Doc Edits): OPEN (6 Tage)
+
+**Package-Versionen:** Unverändert (`convex-lib` 0.1.8, `convex-e2e` 0.1.4)
+
+**Beobachtungen:**
+- **Mynd ist DAS aktive Projekt** — 20 PRs in einer Woche, von Basis-Chat zu vollem Telegram-integrierten AI-Assistenten
+- Mynd etabliert neue Patterns: Convex Self-Hosted, Better Auth, Telegram Bot Bridge, Voice + Vision — das sind zukünftige Amadeni-Konventionen
+- agri-tools wird funktional reicher (Composite Pricing, Asset Registry)
+- ki-at-obv PRs #1/#2 jetzt **12+ Wochen** offen — Code ist mit Sicherheit veraltet, sollten geschlossen werden
+- impuls-kbb konsolidiert nach der Billing-Sprint-Woche
+
+**Empfehlung:**
+1. Mynd-Patterns (Telegram Bridge, Voice Tools, Image Upload) in Konventionen aufnehmen
+2. ki-at-obv PRs #1/#2 endgültig schließen
+3. `create-amadeni-app` Skill an Mynd-Stack angleichen (Next.js 16, Convex 1.36, Better Auth)
+4. agri-tools PR #72 und impuls-kbb PR #80 reviewen
+
+---
+
 ## KW 17 (21.–27. April 2026) — Billing-Offensive & Factorial-Cockpit
 
 **impuls-kbb (10 gemergte PRs! #70–#79):**
